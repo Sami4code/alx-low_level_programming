@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * main - the main function
+ *
+ * Return: 0 (success)
+ */
+
+int main(void)
+{
+	int a;
+	int b;
+	int c;
+	int d;
+
+	for (a = 48; a <= 57; c++)
+	{
+		for (b = 48; b <= 57; b++)
+		{
+			for (c = 48; c <= 57; c++)
+			{
+				for (d = 48; d <= 57; d++)
+				if (((c + d) > (a + b) && c >= a) || a < c)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					putchar(d);
+
+					if (a + b + c + d == 227 && a == 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
