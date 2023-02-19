@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * main - the main function
@@ -11,28 +11,21 @@ int main(void)
 {
 	int a;
 	int b;
-	int c;
-	int d;
 
-	for (a = 48; a <= 57; c++)
+	for (a = 0 ; a < 100 ; a++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (b = 0 ; b < 100 ; b++)
 		{
-			for (c = 48; c <= 57; c++)
+			if (a < b)
 			{
-				for (d = 48; d <= 57; d++)
-				if (((c + d) > (a + b) && c >= a) || a < c)
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
+				if (a + b != 18)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					putchar(d);
-
-					if (a + b + c + d == 227 && a == 57)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
