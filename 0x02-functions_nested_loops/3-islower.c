@@ -3,7 +3,7 @@
 /**
  *  _islower - checks the lower case number
  *  @c: parameter c
- *  Return: 1 if in lower case 
+ *  Return: 1 if in lower case
  *  and 0 otherwise
  */
 
