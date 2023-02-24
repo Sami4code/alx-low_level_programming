@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main -  the main function prints the numbers from 1 to 100, followed by a new line.
+ * main -  the main function prints the numbers from 1 to 100.
  * Return: void
  */
 
