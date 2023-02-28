@@ -2,7 +2,7 @@
 
 /**
  * print_rev - a function that prints a string, in reverse.
- * @s: prototype paramwter
+ * @s: prototype parameter
  * Return: 0
  */
 
