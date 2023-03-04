@@ -27,7 +27,7 @@ printf(" ");
 if (k < size)
 printf("%.2x", *(b + k));
 else
-printf(" ");
+printf("  ");
 }
 printf(" ");
 for (l = j; l < j + 10; l++)
