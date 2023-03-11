@@ -1,15 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *  _puts - prints characters
- * @s: srting
+ * _puts -  function that prints a string, followed by a new line, to stdout
+ * @str: parameter string
  * Return: 0
  */
 
-void _puts(char *s)
+void _puts(char *str)
 {
-	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t
-	-Kelvin Mitnick");
-	return (0);
+	int i;
+
+	for (i = 0; str[i] != '\0' ; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }
