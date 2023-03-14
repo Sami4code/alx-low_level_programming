@@ -5,7 +5,7 @@
 /**
  * argstostr - function that concatenates
  *  all the arguments a your program
- *  @c: argument count
+ *  @ac: argument count
  *  @av: argument vector
  *  Return: 0
  */
